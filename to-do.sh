@@ -1,6 +1,6 @@
 To-Do
 
-Login (by username only)
+Login (by username only) ✅
 Search Form (pick a date {optional time range}) --> Avaiable reservations 
     Reservation details:
         start and end on half hour or hour 
@@ -13,7 +13,7 @@ Page that shows all reservations (like my bucketlists page)
 
 
 Four Pages:
-    Login screen
+    Login screen ✅
     Page to search for appointments
     Results page to view the results (then click to book an appointment)
     Page to view all schedule appointments (optional - edit/cancel appiontment feature)

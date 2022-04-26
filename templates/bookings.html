@@ -1,0 +1,30 @@
+<!---Book a Reservation Page for Watermelon App.--->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watermelon Tastings</title>
+  </head>
+  <body>
+    <h1>Melon Reservation Scheduler</h1>
+    <div class="reservations">
+        <form action="book" method="POST">
+            <select>
+                <option value="date">Date</option>
+                <option value="time">Time (start & end)</option>
+            </select>
+            <p>
+                <button id="book-it">Search</button>
+            </p>
+        </form>
+    </div>
+    <ul>
+      {% for message in get_flashed_messages() %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
