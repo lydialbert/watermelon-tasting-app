@@ -12,8 +12,6 @@ Click on appointment to book an appointment (using javascript for an event liste
 Page that shows all reservations (like my bucketlists page)
 
 
-
-Create a database, called users reservations
 Four Pages:
     Login screen
     Page to search for appointments

@@ -17,7 +17,6 @@ class User(db.model):
     def __repr__(self):
         return f"<User's First Name={self.fname}, User's Username={self.user_name}>"
 
-
 if __name__ == "__main__":
     from server import app
     
