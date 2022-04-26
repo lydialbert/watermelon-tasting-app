@@ -12,7 +12,6 @@ class User(db.model):
     user_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     user_name = db.Coulmn(db.String, nullable=False, unique=True)
     fname = db.Column(db.String, nullable=False)
-    lname = db.Column(db.String, nullable=False)
 
     def __repr__(self):
         return f"<User's First Name={self.fname}, User's Username={self.user_name}>"
