@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
     <title>Watermelon Tastings</title>
   </head>
   <body>
@@ -13,23 +14,24 @@
     <div class="reservations">
         <form action="book" method="POST">
             <h3>Add a 2022 Calendar Here</h3>
+            <div id="calendar"></div>
             <select name="start-time">
                 <option value="N/A" disabled selected hidden>Start Time</option>
-                <option value="time">7:00AM-7:30AM</option>
-                <option value="time">7:30AM-8:00AM</option>
-                <option value="time">8:00AM-8:30AM</option>
-                <option value="time">8:30AM-9:00AM</option>
-                <option value="time">9:00AM-9:30AM</option>
-                <option value="time">9:30AM-10:00AM</option>
+                <option value="time">7:00AM</option>
+                <option value="time">7:30AM</option>
+                <option value="time">8:00AM</option>
+                <option value="time">8:30AM</option>
+                <option value="time">9:00AM</option>
+                <option value="time">9:30AM</option>
             </select>
             <select name="end-time">
               <option value="N/A" disabled selected hidden>End Time</option>
-              <option value="time">7:00AM-7:30AM</option>
-              <option value="time">7:30AM-8:00AM</option>
-              <option value="time">8:00AM-8:30AM</option>
-              <option value="time">8:30AM-9:00AM</option>
-              <option value="time">9:00AM-9:30AM</option>
-              <option value="time">9:30AM-10:00AM</option>
+              <option value="time">7:30AM</option>
+              <option value="time">8:00AM</option>
+              <option value="time">8:30AM</option>
+              <option value="time">9:00AM</option>
+              <option value="time">9:30AM</option>
+              <option value="time">10:00AM</option>
             </select>
             <p>
                 <button id="book-it">Search</button>

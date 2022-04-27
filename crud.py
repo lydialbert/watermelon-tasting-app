@@ -10,4 +10,9 @@ def create_user(fname, username):
         username=username,
     )
 
-    return user
+    return
+
+def login_user(fname):
+    """Verify a User Login."""
+
+    return User.query.filter(User.fname == fname).first()

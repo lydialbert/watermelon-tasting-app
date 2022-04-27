@@ -1,0 +1,26 @@
+<!---Select a Booking for Watermelon App.--->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watermelon Tastings</title>
+  </head>
+  <body>
+    <h1>Available Reservations</h1>
+    {% for i in range(5) %}
+        <div class="watermelon-tastings">
+            <img src="static/images/watermelon.jpeg">
+            <h3>Watermelon Tasting #{{ i+1 }}</h3>
+            <button id="book-res">Book</button>
+        </div>
+    {% endfor %}
+    <ul>
+      {% for message in get_flashed_messages() %}
+        <li>{{ message }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
