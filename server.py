@@ -42,6 +42,7 @@ def present_bookings():
 
     start_time = request.form.get("start-time")
     end_time = request.form.get("end-time")
+    date = request.form.get("date")
 
     avaiable_reservations = ['time']
 
@@ -50,9 +51,20 @@ def present_bookings():
     else:
         return render_template("tastings.html")
 
-@app.route('/reservations', methods=['POST'])
+@app.route('/book', methods=['POST'])
 def add_bookings():
-    """Add a Reservation to Database"""
+    """Add a Reservation to Database."""
+
+    #add a reservation using a crud function
+    #add a crud function to look at ALL of a users reservations
+    if reservation.time == time1 and reservation.time == time2:
+        flash("Can only book one reservation per time.")
+    else:
+        return render_template
+
+@app.route('/reservations', methods=['POST'])
+def view_bookings():
+    """View all Reservations."""
 
     return render_template("reservations.html")
 

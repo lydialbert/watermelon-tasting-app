@@ -18,21 +18,7 @@ Four Pages:
     Results page to view the results ✅
     Page to view all schedule appointments (optional - edit/cancel appiontment feature)
 
-
-Questions:
-    database question:
-
-    fname = request.form.get("fname")
-    username = request.form.get("username")
-    user = crud.login_user(fname)
-
-    if user.username == username:
-        return render_template("bookings.html")
-    else:
-        flash("Incorrect username.")
-        return redirect('/')
-
-    calendar question:
-
-    c = calendar.TextCalendar(calendar.SUNDAY)
-    c_test = c.formatmonth(2022, 1)
+    add another table called 'reservations' to database.
+    render the reservations on the my reservations page.
+    add feature: only ONE reservation per day
+    add feature: 
