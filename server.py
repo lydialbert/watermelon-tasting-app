@@ -36,8 +36,7 @@ def logging_in():
 
     return render_template("bookings.html")
 
-
-@app.route('/book', methods=['POST'])
+@app.route('/search', methods=['POST'])
 def present_bookings():
     """View Watermelon Tastings for Booking."""
 
@@ -46,11 +45,16 @@ def present_bookings():
 
     avaiable_reservations = ['time']
 
-    if start_time not in avaiable_reservations:
-        flash("Sorry their are no reservations available for that time")
+    if start_time and end_time not in avaiable_reservations:
+        flash("Sorry their are no reservations available for that time.")
     else:
         return render_template("tastings.html")
 
+@app.route('/reservations', methods=['POST'])
+def add_bookings():
+    """Add a Reservation to Database"""
+
+    return render_template("reservations.html")
 
 if __name__ == "__main__":
     connect_to_db(app)

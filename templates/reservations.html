@@ -1,0 +1,22 @@
+<!---My Reservations for Watermelon App.--->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Watermelon Tastings</title>
+  </head>
+  <body>
+    <form action="/res">
+        <h1>My Watermelon Tasting Reservations</h1>
+        <div class="my_reservations"></div>
+        <ul>
+        {% for message in get_flashed_messages() %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    </form>
+  </body>
+</html>

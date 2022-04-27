@@ -7,15 +7,15 @@ Search Form (pick a date {optional time range}) --> Avaiable reservations ✅
         Are 30 mins ✅
         Only 1 per month!
         Only book 1 reservation at a time, add feature of an error message if trying to book two at once
-    No reservations --> flash a message saying that ✅
-Click on appointment to book an appointment (using javascript for an event listener)
-Page that shows all reservations (like my bucketlists page)
+        No reservations --> flash a message saying that ✅
+Click on appointment to book an appointment (using javascript for an event listener) ✅
+Page that shows all reservations
 
 
 Four Pages:
     Login screen ✅
-    Page to search for appointments ✅
-    Results page to view the results (then click to book an appointment)
+    Page to search for tastings ✅
+    Results page to view the results ✅
     Page to view all schedule appointments (optional - edit/cancel appiontment feature)
 
 

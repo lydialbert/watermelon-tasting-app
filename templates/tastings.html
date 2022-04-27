@@ -1,4 +1,4 @@
-<!---Select a Booking for Watermelon App.--->
+<!---Select a Reservation for Watermelon App.--->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,18 +9,24 @@
     <title>Watermelon Tastings</title>
   </head>
   <body>
-    <h1>Available Reservations</h1>
-    {% for i in range(5) %}
-        <div class="watermelon-tastings">
-            <img src="static/images/watermelon.jpeg">
-            <h3>Watermelon Tasting #{{ i+1 }}</h3>
-            <button id="book-res">Book</button>
-        </div>
-    {% endfor %}
-    <ul>
-      {% for message in get_flashed_messages() %}
-        <li>{{ message }}</li>
-      {% endfor %}
-    </ul>
+    <form action="/book" method="POST">
+        <h1>Available Reservations</h1>
+        {% for i in range(5) %}
+            <div class="watermelon-tastings">
+                <img src="static/images/watermelon.jpeg">
+                <h3>Watermelon Tasting #{{ i+1 }}</h3>
+                <button class="book-it">Book</button>
+            </div>
+        {% endfor %}
+        <ul>
+        {% for message in get_flashed_messages() %}
+            <li>{{ message }}</li>
+        {% endfor %}
+        </ul>
+    </form>
+    <form action="/reservations" method="POST">
+        <button id="my_res">See My Reservations</button>
+    </form>
+    <script src="/static/buttons.js"></script>
   </body>
 </html>
