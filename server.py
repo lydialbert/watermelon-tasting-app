@@ -22,14 +22,16 @@ def new_user():
     first_name = request.form.get("fname")
     username = request.form.get("username")
 
-    return re-direct('/')
+    #create user in database using crud function
+    flash("Success! Go ahead and login.")
+
+    return redirect('/')
 
 @app.route('/login', methods=['POST'])
 def logging_in():
     """Process a User Login."""
     
     return render_template("bookings.html")
-
 
 if __name__ == "__main__":
     connect_to_db(app)

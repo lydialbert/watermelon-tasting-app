@@ -12,9 +12,24 @@
     <h1>Melon Reservation Scheduler</h1>
     <div class="reservations">
         <form action="book" method="POST">
-            <select>
-                <option value="date">Date</option>
-                <option value="time">Time (start & end)</option>
+            <h3>Add a 2022 Calendar Here</h3>
+            <select name="start-time">
+                <option value="N/A" disabled selected hidden>Start Time</option>
+                <option value="time">7:00AM-7:30AM</option>
+                <option value="time">7:30AM-8:00AM</option>
+                <option value="time">8:00AM-8:30AM</option>
+                <option value="time">8:30AM-9:00AM</option>
+                <option value="time">9:00AM-9:30AM</option>
+                <option value="time">9:30AM-10:00AM</option>
+            </select>
+            <select name="end-time">
+              <option value="N/A" disabled selected hidden>End Time</option>
+              <option value="time">7:00AM-7:30AM</option>
+              <option value="time">7:30AM-8:00AM</option>
+              <option value="time">8:00AM-8:30AM</option>
+              <option value="time">8:30AM-9:00AM</option>
+              <option value="time">9:00AM-9:30AM</option>
+              <option value="time">9:30AM-10:00AM</option>
             </select>
             <p>
                 <button id="book-it">Search</button>

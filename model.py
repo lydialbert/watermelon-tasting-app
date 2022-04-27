@@ -10,11 +10,11 @@ class User(db.Model):
     __tablename__ = "users"
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    user_name = db.Column(db.String(120), nullable=False, unique=True)
+    username = db.Column(db.String(120), nullable=False, unique=True)
     fname = db.Column(db.String(80), nullable=False)
 
     def __repr__(self):
-        return f"<User's First Name={self.fname}, User's Username={self.user_name}>"
+        return f"<User's First Name={self.fname}, User's Username={self.username}>"
 
 
 def connect_to_db(flask_app, db_uri="postgresql:///users", echo=True):
