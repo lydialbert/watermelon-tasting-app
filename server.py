@@ -57,10 +57,10 @@ def add_bookings():
 
     #add a reservation using a crud function
     #add a crud function to look at ALL of a users reservations
-    if reservation.time == time1 and reservation.time == time2:
-        flash("Can only book one reservation per time.")
-    else:
-        return render_template
+    #if reservation.time == time1 and reservation.time == time2:
+        #flash("Can only book one reservation per time.")
+    #else:
+        #return render_template("tastings.html")
 
 @app.route('/reservations', methods=['POST'])
 def view_bookings():
