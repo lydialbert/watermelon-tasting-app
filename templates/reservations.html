@@ -12,10 +12,11 @@
     <form action="/res">
         <h1>My Watermelon Tasting Reservations</h1>
         <div class="my_reservations">
+          <!------Create in Database, then add this 
             {% for reservation in reservations %}
                 <h3>{{ reservation.name }}</h3>
                 <h4>{{ reservation.date }} at {{reservation.time }}</h4>
-            {% endfor %}
+            {% endfor %}------->
         </div>
         <ul>
         {% for message in get_flashed_messages() %}
